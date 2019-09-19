@@ -87,7 +87,7 @@ Angelica Zamer: Starting on the HTML file, drawing the s
 
 06 – Sketch of the design sketch (Open link below):
 
-https://github.com/bricezakra/Project01-UT-Coding-Bootcamp/blob/master/image.png
+![alt text](https://github.com/bricezakra/Project01-UT-Coding-Bootcamp/blob/master/image.png)
 
 
 
