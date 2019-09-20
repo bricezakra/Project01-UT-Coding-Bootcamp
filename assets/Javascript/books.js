@@ -15,21 +15,45 @@ $(document).ready(function(){
     method: "GET",
     url: bookUrl,
   }).then(function(response){
-    console.log(bookUrl)
     console.log(response)
+    var items= response.items;
+    for (var i =0; i< items.length; i++){
+
+      var title = response.items[i].volumeInfo.title;
+      var author = response.items[i].volumeInfo.authors[0];
+      var description = response.items[i].volumeInfo.description;
+      var coverImg = response.items[i].volumeInfo.imageLinks.smallThumbnail;
+      console.log(title)
+      console.log(author)
+      console.log(description)
+      console.log(coverImg)
+      
+      $(".card-title0").text(response.items[0].volumeInfo.title);
+      $(".card-title1").text(response.items[1].volumeInfo.title);
+      $(".card-title2").text(response.items[2].volumeInfo.title);
+      $(".card-title3").text(response.items[3].volumeInfo.title);
+
+      $(".book-cover0").text("src="+response.items[0].volumeInfo.imageLinks.smallThumbnail);
+      $(".book-cover1").text(response.items[1].volumeInfo.imageLinks.smallThumbnail);
+      $(".book-cover2").text(response.items[2].volumeInfo.imageLinks.smallThumbnail);
+      $(".book-cover3").text(response.items[3].volumeInfo.imageLinks.smallThumbnail);
+      }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
   })
 
 
 
 
-
-
-
-})
-
-
-//on click event listener for Submit button
-$("button").on("click", function(){
-  console.log("Clicked");
-  //here we need pull targeted data from BookAPI & display to the book cards
-})
