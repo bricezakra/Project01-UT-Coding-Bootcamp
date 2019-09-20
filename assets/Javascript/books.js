@@ -37,23 +37,4 @@ $(document).ready(function(){
       $(".book-cover1").text(response.items[1].volumeInfo.imageLinks.smallThumbnail);
       $(".book-cover2").text(response.items[2].volumeInfo.imageLinks.smallThumbnail);
       $(".book-cover3").text(response.items[3].volumeInfo.imageLinks.smallThumbnail);
-      }
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-  })
-
-
-
-
+    };
