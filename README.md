@@ -4,12 +4,14 @@
 
 
 
-Deployed at: https://bricezakra.github.io/Project01-UT-Coding-Bootcamp/
+# Deployed at: 
+
+https://bricezakra.github.io/Project01-UT-Coding-Bootcamp/
 
 
 
 
-Project Requirements:
+# Project Requirements:
 
 
  01 - Use at least two APIs: Google Books; ...
@@ -36,7 +38,7 @@ Project Requirements:
 
 
 
-Bonus:
+# Bonus:
 
 
  01 - Make your site mobile responsive;
@@ -47,45 +49,45 @@ Bonus:
 
 
 
-                      Project Checklist
+                      # Project Checklist
 
 
 
-01 - Project Title: 
+# 01 - Project Title: 
 
 BOOKILICIOUS
 
 
-02 - Team Members:
+# 02 - Team Members:
 
-Gordon Coutret
-Erika Gonzalez
-Brice Zakra
-Angelica Zamer
+##### Gordon Coutret
+##### Erika Gonzalez
+##### Brice Zakra
+##### Angelica Zamer
 
 
-03 – Project Description:
+# 03 – Project Description:
 
 This app will allow users to enter a book title they have already read and they will receive recommendations for future books they might be interested in reading. It will also allow them to get some recommendations on where to acquire them (local stores, online, …)
 
 
-04 – APIs to be used:
+# 04 – APIs to be used:
 Google Books;
 Google maps or Yelp (still undecided, we will figure it out along the project).
 
 
-05 – Rough breakdown of tasks:
+# 05 – Rough breakdown of tasks:
  
-Gordon Coutret: working on the CSS file;
+##### Gordon Coutret: working on the CSS file;
 
-Erika Gonzalez: She will help with the styling (not present today);
+##### Erika Gonzalez: She will help with the styling (not present today);
 
-Brice Zakra : working on AJAX, Creating the URLs, Declaring the variables, including the API keys;
+##### Brice Zakra : working on AJAX, Creating the URLs, Declaring the variables, including the API keys;
 
-Angelica Zamer: Starting on the HTML file, drawing the s
+##### Angelica Zamer: Starting on the HTML file, drawing the s
 
 
-06 – Sketch of the design sketch (Open link below):
+# 06 – Sketch of the design sketch (Open link below):
 
 ![alt text](https://github.com/bricezakra/Project01-UT-Coding-Bootcamp/blob/master/image.png)
 
