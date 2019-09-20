@@ -26,3 +26,10 @@ $(document).ready(function(){
 
 
 })
+
+
+//on click event listener for Submit button
+$("button").on("click", function(){
+  console.log("Clicked");
+  //here we need pull targeted data from BookAPI & display to the book cards
+})
