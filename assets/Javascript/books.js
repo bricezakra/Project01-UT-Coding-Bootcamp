@@ -33,6 +33,7 @@ $(document).ready(function(){
       $(".card-title2").text(response.items[2].volumeInfo.title);
       $(".card-title3").text(response.items[3].volumeInfo.title);
 
+
       $(".book-cover0").attr('src',response.items[0].volumeInfo.imageLinks.smallThumbnail);
       $(".book-cover1").attr('src',response.items[1].volumeInfo.imageLinks.smallThumbnail);
       $(".book-cover2").attr('src',response.items[2].volumeInfo.imageLinks.smallThumbnail);
@@ -64,3 +65,4 @@ $(document).ready(function(){
 
   })
 })
+
