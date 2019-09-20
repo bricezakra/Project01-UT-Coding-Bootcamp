@@ -60,10 +60,10 @@ BOOKILICIOUS
 
 # 02 - Team Members:
 
-## Gordon Coutret
-## Erika Gonzalez
-## Brice Zakra
-## Angelica Zamer
+##### Gordon Coutret
+##### Erika Gonzalez
+##### Brice Zakra
+##### Angelica Zamer
 
 
 # 03 – Project Description:
@@ -78,13 +78,13 @@ Google maps or Yelp (still undecided, we will figure it out along the project).
 
 # 05 – Rough breakdown of tasks:
  
-## Gordon Coutret: working on the CSS file;
+##### Gordon Coutret: working on the CSS file;
 
-## Erika Gonzalez: She will help with the styling (not present today);
+##### Erika Gonzalez: She will help with the styling (not present today);
 
-## Brice Zakra : working on AJAX, Creating the URLs, Declaring the variables, including the API keys;
+##### Brice Zakra : working on AJAX, Creating the URLs, Declaring the variables, including the API keys;
 
-## Angelica Zamer: Starting on the HTML file, drawing the s
+##### Angelica Zamer: Starting on the HTML file, drawing the s
 
 
 # 06 – Sketch of the design sketch (Open link below):
