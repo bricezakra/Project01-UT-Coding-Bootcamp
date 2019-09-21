@@ -1,6 +1,37 @@
+body {
+  background-color: grey;
+}
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+
+.description{
+height: 250px;
+  width: 100%;
+  border: 1px solid #ccc;
+  overflow: auto;
+}
+
+.card{
+  margin-top: 20px;
+  
+}
+
+.bookcard{
+  height: 650px;
+  width: 500px;
+
+}
+
+.btn-primary{
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,red, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right,red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+    color:black;
+    
 }
