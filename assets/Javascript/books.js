@@ -1,15 +1,15 @@
 $(document).ready(function() {
 
 
+    //TODO this needs to be set as a function(lines 5-52) so that it can be called after every user Submit. See lines 54-65.
     var bookApi = "AIzaSyAOMEGBcZM52PxoloGuA8EjcWPOw1fJIJs";
     var yelpApi = "Vz47dpZcuUUiQHoDUhocATeDvpK3HROrFQJn-bxpmIN9uQ1c98taQXTiYmpymZbuhSMluME66RlWDHjwKHDfwSQen-sLdTqN2siW-J_0ATdUjDW4b27AadLOisCDXXYx";
 
-    var search2 = 'Tacos Mexico';
+    var search2= "Chuck Norris";
     var bookUrl = 'https://www.googleapis.com/books/v1/volumes?q=' + search2 + '&maxResults=4&orderBy=relevance&key=' + bookApi
 
-    var search = $(this).text()
-
-
+    // @TODO: what is this getting used for? -angelica 
+    // var search = $(this).text()
 
     $.ajax({
         method: "GET",
@@ -49,19 +49,17 @@ $(document).ready(function() {
             $(".card-author2").text(response.items[2].volumeInfo.authors[0]);
             $(".card-author3").text(response.items[3].volumeInfo.authors[0]);
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     })
+
+    //on click listeners - functions can be renamed
+    //this function signals when user has 'submitted' & pulls a search
+    function userSearch(){
+        alert("user has submitted something");
+        search2 = $("#readBookGenre").val();
+        alert(search2);
+        bookUrl = 'https://www.googleapis.com/books/v1/volumes?q=' + search2 + '&maxResults=4&orderBy=relevance&key=' + bookApi
+        //call function that was named above
+    }
+    $("form").submit(userSearch);
+
 })
