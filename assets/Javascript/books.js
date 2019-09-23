@@ -5,7 +5,7 @@ $(document).ready(function() {
     var bookApi = "AIzaSyAOMEGBcZM52PxoloGuA8EjcWPOw1fJIJs";
     var yelpApi = "Vz47dpZcuUUiQHoDUhocATeDvpK3HROrFQJn-bxpmIN9uQ1c98taQXTiYmpymZbuhSMluME66RlWDHjwKHDfwSQen-sLdTqN2siW-J_0ATdUjDW4b27AadLOisCDXXYx";
 
-    var search2= "Chuck Norris";
+    var search2 = $("#readBookGenre").val();
     var bookUrl = 'https://www.googleapis.com/books/v1/volumes?q=' + search2 + '&maxResults=4&orderBy=relevance&key=' + bookApi
 
     // @TODO: what is this getting used for? -angelica 
@@ -51,7 +51,10 @@ $(document).ready(function() {
         }
     })
 
-    //on click listeners - functions can be renamed
+   
+})
+
+ //on click listeners - functions can be renamed
     //this function signals when user has 'submitted' & pulls a search
     function userSearch(){
         alert("user has submitted something");
@@ -59,7 +62,7 @@ $(document).ready(function() {
         alert(search2);
         bookUrl = 'https://www.googleapis.com/books/v1/volumes?q=' + search2 + '&maxResults=4&orderBy=relevance&key=' + bookApi
         //call function that was named above
-    }
-    $("form").submit(userSearch);
 
-})
+    }
+    
+$("form").submit(userSearch);
