@@ -1,4 +1,4 @@
-
+﻿
 # Project01-UT Coding Bootcamp
 
 
@@ -14,7 +14,7 @@ https://bricezakra.github.io/Project01-UT-Coding-Bootcamp/
 # Project Requirements:
 
 
- 01 - Use at least two APIs: Google Books; ...
+ 01 - Use at least two APIs: Google Books api, Yelp api;
 
  02 - Use AJAX to pull data;
 
