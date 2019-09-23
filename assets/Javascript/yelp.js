@@ -9,16 +9,14 @@ $(document).ready(function() {
 
 
 
-    var search = 'bookstore';
+   
     // var cors = "https://cors-anywhere.herokuapp.com/"
-    var lng = 97.7431;
-    var lat = 30.2672;
-    // var location = 'London';
-    // var yelpUrl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?latitude=" + lat + "&longitude=" + lng + "&limit=10";
-    var yelpUrl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=" + search + "&limit=10&location=Paris";
+    
+    var location = 'Austin';
+    
+    var yelpUrl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=bookstore&limit=2&location="+location;
 
-    // latitude=" + lat + "&longitude=" + lng;
-    // var search = $(this).text()
+
 
 
     console.log(yelpUrl)
@@ -33,14 +31,43 @@ $(document).ready(function() {
             success: function(data) {
                 console.log(data);
                 console.log(yelpUrl);
+
+
+            var businesses = data.businesses;
+            for (var i = 0; i < businesses.length; i++) {
+                var bookStoreName= data.businesses[i].name;
+                var bookStorePhone= data.businesses[i].display_phone;
+                var bookStoreAddress= data.businesses[i].location.display_address;
+                var bookStoreAlias= data.businesses[i].alias;
+                var bookStoreWebsite= "yelp.com/biz/"+bookStoreAlias;
+                //var bookStoreAddress=data.businesses[i].location.address1+","+data.businesses[i].location.city+","+data.businesses[i].location.zip_code;
+                console.log(bookStoreAlias, bookStoreAddress, bookStoreName, bookStorePhone)
+                console.log(bookStoreWebsite)
+
+               
+                var bookCard = $("<div>");
+                bookCard.addClass("card bookcard")
+                var cardBody = $("<div>");
+                //cardBody = <div></div>
+                var storeAddress= $("h5 class='sotre-address'>").text(data.businesses[i].location.display_address)
+                var storePhone= $("h5 class='store-phone'>").text(data.businesses[i].display_phone);
+                var storeWebsite= $("<h5 class='store-website'>").text("yelp.com/biz/"+bookStoreAlias);
+                var storeName = $("<h3 class='store-name'>").text(data.businesses[i].name);
+                cardBody.append(storeName, storePhone, storeWebsite, storeAddress)
+                bookCard.append(cardBody);
+                $(".bookDiv").append(bookCard);
+                
             }
-        })
-        // }).then(function(response) {
-        //     console.log(response)
-        // })
+
+
+
+        }
+       
 
 
 
 
+
+})
 
 })
