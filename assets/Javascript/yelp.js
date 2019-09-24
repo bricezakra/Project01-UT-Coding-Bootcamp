@@ -44,17 +44,7 @@ $(document).ready(function() {
                 console.log(bookStoreAlias, bookStoreAddress, bookStoreName, bookStorePhone)
                 console.log(bookStoreWebsite)
 
-                $("#store-name0").text(data.businesses[0].name);
-                $("#store-name1").text(data.businesses[1].name);
-
-                $("#store-address0").text(data.businesses[0].location.display_address);
-                $("#store-address1").text(data.businesses[1].location.display_address);
-
-                $("#store-phone0").text(data.businesses[0].display_phone);
-                $("#store-phone1").text(data.businesses[1].display_phone);
-
-                $("#store-website0").text(bookStoreWebsite);
-                $("#store-website1").text(bookStoreWebsite);
+               
                 var bookCard = $("<div>");
                 bookCard.addClass("card bookcard")
                 var cardBody = $("<div>");
@@ -66,6 +56,7 @@ $(document).ready(function() {
                 cardBody.append(storeName, storePhone, storeWebsite, storeAddress)
                 bookCard.append(cardBody);
                 $(".bookDiv").append(bookCard);
+                
             }
 
 
