@@ -1,22 +1,27 @@
-var search2 = "chuck norris";
 
+ var search2 = "chuck norris";
+    var search1 = "blah";
+    var search3 = "wow";
 $(document).ready(function() {
+   
 
     //api keys
     var bookApi = "AIzaSyAOMEGBcZM52PxoloGuA8EjcWPOw1fJIJs";
 
 
     // var search2 = $("#readBookGenre").val();
-    var bookUrl = 'https://www.googleapis.com/books/v1/volumes?q=' + search2 + '&maxResults=4&orderBy=relevance&key=' + bookApi
+    var bookUrl = 'https://www.googleapis.com/books/v1/volumes?q=' +search1+search2+search3+ '&maxResults=4&orderBy=relevance&key=' + bookApi
 
 
      //on click listeners - functions can be renamed
     //this function signals when user has 'submitted' & pulls a search
     function userSearch(){
         console.log("user has submitted something");
+        search1 = $("#readBook").val();
         search2 = $("#readBookGenre").val();
-        alert("userSearch: here's what was entered: " + search2);
-        bookUrl = 'https://www.googleapis.com/books/v1/volumes?q=' + search2 + '&maxResults=4&orderBy=relevance&key=' + bookApi
+        search3 = $("#readBookAuthor").val();
+        alert("userSearch: here's what was entered: " +search1+search2+search3);
+        bookUrl = 'https://www.googleapis.com/books/v1/volumes?q=' + search1+search2+search3+ '&maxResults=4&orderBy=relevance&key=' + bookApi
         alert(bookUrl);
         $.ajax({
             url: bookUrl,
