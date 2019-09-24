@@ -4,7 +4,23 @@ $(document).ready(function() {
 
     //api keys
     var bookApi = "AIzaSyAOMEGBcZM52PxoloGuA8EjcWPOw1fJIJs";
-    // var yelpApi = "Vz47dpZcuUUiQHoDUhocATeDvpK3HROrFQJn-bxpmIN9uQ1c98taQXTiYmpymZbuhSMluME66RlWDHjwKHDfwSQen-sLdTqN2siW-J_0ATdUjDW4b27AadLOisCDXXYx";
+    var yelpApi = "Vz47dpZcuUUiQHoDUhocATeDvpK3HROrFQJn-bxpmIN9uQ1c98taQXTiYmpymZbuhSMluME66RlWDHjwKHDfwSQen-sLdTqN2siW-J_0ATdUjDW4b27AadLOisCDXXYx";
+
+
+    // var search2 = $("#readBookGenre").val();
+    var bookUrl = 'https://www.googleapis.com/books/v1/volumes?q=' + search2 + '&maxResults=4&orderBy=relevance&key=' + bookApi
+
+
+    // @TODO: what is this getting used for? -angelica 
+    // var search = $(this).text()
+    
+    // var genreSearch = $("#readBookGenre").val();
+    // console.log(genreSearch)
+    // var authorSearch= $("#readBookAuthor").val();
+    // console.log(authorSearch)
+    // var fullSearch= genreSearch+authorSearch;
+    // console.log(fullSearch);
+    
 
     //building of our URL to query the database
 
