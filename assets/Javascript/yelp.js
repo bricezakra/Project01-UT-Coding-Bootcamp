@@ -9,13 +9,12 @@ $(document).ready(function() {
 
 
 
-    var search = 'bookstore';
     // var cors = "https://cors-anywhere.herokuapp.com/"
     var lng = 97.7431;
     var lat = 30.2672;
-    // var location = 'London';
+    var location = 'London';
     // var yelpUrl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?latitude=" + lat + "&longitude=" + lng + "&limit=10";
-    var yelpUrl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=" + search + "&limit=10&location=Paris";
+    var yelpUrl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=bookstore&limit=10&location="+ location;
 
     // latitude=" + lat + "&longitude=" + lng;
     // var search = $(this).text()
