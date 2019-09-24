@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 var search2 = "chuck norris";
 var search1 = "blah";
@@ -13,11 +11,15 @@ var search3 = "wow";
      //on click listeners - functions can be renamed
     //this function signals when user has 'submitted' & pulls a search
     function userSearch(){
-        console.log("user has submitted something");
+        
+    
+        $(".card-title0").empty();
+        $(".book-cover0").empty();
+        $(".card-text0").empty();
+        $(".card-author0").empty();
         search1 = $("#readBook").val();
         search2 = $("#readBookGenre").val();
         search3 = $("#readBookAuthor").val();
-        alert("userSearch: here's what was entered: " +search1+search2+search3);
         bookUrl = 'https://www.googleapis.com/books/v1/volumes?q=' + search1+search2+search3+ '&maxResults=4&orderBy=relevance&key=' + bookApi
         alert(bookUrl);
         $.ajax({
@@ -27,7 +29,6 @@ var search3 = "wow";
                 alert("userSearch: there was an error");
             }, success: function (response){
                 event.preventDefault();
-                alert("userSearch: I did it");
                 var items = response.items;
                 for (var i = 0; i < items.length; i++) {
 
@@ -62,7 +63,7 @@ var search3 = "wow";
                     $(".card-author3").text(response.items[3].volumeInfo.authors[0]);
                 }
             }, complete: function(){
-                alert("userSearch: You complete me");
+                
             },
         })
       

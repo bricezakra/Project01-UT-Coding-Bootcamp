@@ -12,7 +12,7 @@ $(document).ready(function() {
    
     // var cors = "https://cors-anywhere.herokuapp.com/"
     
-    var location = 'Austin';
+    var location = "78704";
     
     var yelpUrl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=bookstore&limit=2&location="+location;
 
@@ -42,20 +42,36 @@ $(document).ready(function() {
                 var bookStoreWebsite= "yelp.com/biz/"+bookStoreAlias;
                 //var bookStoreAddress=data.businesses[i].location.address1+","+data.businesses[i].location.city+","+data.businesses[i].location.zip_code;
                 console.log(bookStoreAlias, bookStoreAddress, bookStoreName, bookStorePhone)
-                console.log(bookStoreWebsite)
+                console.log(bookStoreWebsite);
 
-               
-                var bookCard = $("<div>");
-                bookCard.addClass("card bookcard")
-                var cardBody = $("<div>");
-                //cardBody = <div></div>
-                var storeAddress= $("h5 class='sotre-address'>").text(data.businesses[i].location.display_address)
-                var storePhone= $("h5 class='store-phone'>").text(data.businesses[i].display_phone);
-                var storeWebsite= $("<h5 class='store-website'>").text("yelp.com/biz/"+bookStoreAlias);
-                var storeName = $("<h3 class='store-name'>").text(data.businesses[i].name);
-                cardBody.append(storeName, storePhone, storeWebsite, storeAddress)
-                bookCard.append(cardBody);
-                $(".bookDiv").append(bookCard);
+                var card = $(`
+                    <div class="card bookcard" style="width: 18rem;">
+                        <div class="card-body">
+                            <h3 class="store-name">${bookStoreName}</h3>
+                            <h5 class="store-phone">${bookStorePhone}</h5>
+                            <h5 class="store-address">${bookStoreAddress}</h5>
+                            <h5 class="store-website">${bookStoreWebsite}</h5>
+                        </div>
+                    </div>
+                `);
+                $(".yelpDiv").append(card);
+
+        //         // <div class="card">
+        //         <div class="card-header">
+        //         <h5 class="card-title">Bookstores Around Me</h5>
+        //     </div>
+        //     <div class="card-body">
+        //         <h5 class="store-name1">Name:</h5>
+        //         <h6 class="store-adress1">Address:</h6>
+        //         <h6 class="store-phone1">Number:</h6>
+        //         <h6 class="store-website1">Website:</h6>
+        //         <hr>
+        //         <h5 class="store-name2">Name:</h5>
+        //         <h6 class="store-adress2">Address:</h6>
+        //         <h6 class="store-phone2">Number:</h6>
+        //         <h6 class="store-website2">Website:</h6>
+        //     </div>
+        // </div>
                 
             }
 
