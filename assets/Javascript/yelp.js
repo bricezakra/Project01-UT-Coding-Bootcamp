@@ -9,15 +9,14 @@ $(document).ready(function() {
 
 
 
+   
     // var cors = "https://cors-anywhere.herokuapp.com/"
-    var lng = 97.7431;
-    var lat = 30.2672;
-    var location = 'London';
-    // var yelpUrl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?latitude=" + lat + "&longitude=" + lng + "&limit=10";
-    var yelpUrl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=bookstore&limit=10&location="+ location;
+    
+    var location = 'Austin';
+    
+    var yelpUrl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=bookstore&limit=2&location="+location;
 
-    // latitude=" + lat + "&longitude=" + lng;
-    // var search = $(this).text()
+
 
 
     console.log(yelpUrl)
@@ -32,14 +31,30 @@ $(document).ready(function() {
             success: function(data) {
                 console.log(data);
                 console.log(yelpUrl);
+
+
+            var businesses = data.businesses;
+            for (var i = 0; i < businesses.length; i++) {
+                var bookStoreName= data.businesses[i].name;
+                var bookStorePhone= data.businesses[i].display_phone;
+                var bookStoreAddress= data.businesses[i].location.display_address;
+                var bookStoreAlias= data.businesses[i].alias;
+                var bookStoreWebsite= "yelp.com/biz/"+bookStoreAlias;
+                //var bookStoreAddress=data.businesses[i].location.address1+","+data.businesses[i].location.city+","+data.businesses[i].location.zip_code;
+                console.log(bookStoreAlias, bookStoreAddress, bookStoreName, bookStorePhone)
+                console.log(bookStoreWebsite)
+            
             }
-        })
-        // }).then(function(response) {
-        //     console.log(response)
-        // })
+
+
+
+        }
+       
 
 
 
 
+
+})
 
 })
