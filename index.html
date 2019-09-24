@@ -76,39 +76,15 @@
                             <p class="card-text3 description"></p>
                     </div>
                 </div>
+            </div>
 
-            </div>
-        <div class="row bookDiv">
-            <div class="col-lg-4">
-                <div class="card bookcard" style="width: 18rem;">
-                    <div class="card-body">
-                        <!-- <h3 class="store-name"></h3>
-                        <h5 class="store-website"></h5>
-                        <h5 class="store-address"></h5>
-                        <h5 class="store-website"></h5>     -->
-                    </div>
-                </div>
-                <div class="card bookcard" style="width: 18rem;">
-                    <div class="card-body">
-                        <!-- <h3 class="store-name"></h3>
-                        <h5 class="store-website"></h5>
-                        <h5 class="store-address"></h5>
-                        <h5 class="store-website"></h5>     -->
-                    </div>
-                </div>
-            </div>
-        </div>
             <div class="col-lg-4">
                 <div class="card">
                     <div class="card-body">
                         <form action="" autocomplete="on">
                             <div class="form-group">
-                                <!-- <label for="readBook">Title of my book:</label> 
-                                    <input type="title" class="form-control" id="readBook" aria-describedby="emailHelp" placeholder=""> 
-                                    <br> --> 
-                                    <!-- <label for="readBook">Just finished reading this book:</label> -->
-                                    <input type="text" class="form-control" id="readBook" aria-describedby="emailHelp" placeholder="I just finished reading this book"> 
-
+                                <input type="text" class="form-control" id="readBook" aria-describedby="emailHelp"
+                                    placeholder="I just finished reading this book">
                             </div>
                             <div class="form-group">
                                 <!-- <label for="author">This is an author I enjoy:</label> -->
@@ -118,28 +94,39 @@
                                 <!-- <label for="genre">Genre:</label> -->
                                 <input type="text" class="form-control" id="readBookGenre" placeholder="A genre I enjoy reading">
                             </div>
-
+            
                             <button type="submit" id="submitButton" class="btn btn-primary">Bookilicious Magic</button>
-
+            
                         </form>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-body">
-                        <!-- TODO: Do we need the following or can it be inserted through the Yelp API? -angelica -->
-                        <!-- <form>
-                            <div class="form-row align-items-center">
-                                <div class="col-auto">
-                                    <label class="sr-only" for="inlineFormInput"></label>
-                                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
-                                </div>
+                        <form>
+                            <div class="form-group">
+                                <label for="lookForBookstore">Want to support a local bookstore?</label>
+                                <input type="store" class="form-control" id="storeInfo" placeholder="Enter your zip code here">
                             </div>
-                            <div class="col-auto">
-                                <button type="submit" class="btn btn-primary mb-2">Submit</button>
-                            </div>
-                        </form> -->
-                        map will go here
+                            <button type="submit" class="btn btn-primary">Find a store</button>
+                        </form>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Bookstores Around Me</h5>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="store-name1">Name:</h5>
+                        <h6 class="store-adress1">Address:</h6>
+                        <h6 class="store-phone1">Number:</h6>
+                        <h6 class="store-website1">Website:</h6>
+                        <hr>
+                        <h5 class="store-name2">Name:</h5>
+                        <h6 class="store-adress2">Address:</h6>
+                        <h6 class="store-phone2">Number:</h6>
+                        <h6 class="store-website2">Website:</h6>
                     </div>
                 </div>
             </div>
