@@ -43,7 +43,20 @@ $(document).ready(function() {
                 //var bookStoreAddress=data.businesses[i].location.address1+","+data.businesses[i].location.city+","+data.businesses[i].location.zip_code;
                 console.log(bookStoreAlias, bookStoreAddress, bookStoreName, bookStorePhone)
                 console.log(bookStoreWebsite)
-            
+
+               
+                var bookCard = $("<div>");
+                bookCard.addClass("card bookcard")
+                var cardBody = $("<div>");
+                //cardBody = <div></div>
+                var storeAddress= $("h5 class='sotre-address'>").text(data.businesses[i].location.display_address)
+                var storePhone= $("h5 class='store-phone'>").text(data.businesses[i].display_phone);
+                var storeWebsite= $("<h5 class='store-website'>").text("yelp.com/biz/"+bookStoreAlias);
+                var storeName = $("<h3 class='store-name'>").text(data.businesses[i].name);
+                cardBody.append(storeName, storePhone, storeWebsite, storeAddress)
+                bookCard.append(cardBody);
+                $(".bookDiv").append(bookCard);
+                
             }
 
 
