@@ -55,6 +55,23 @@ $(document).ready(function() {
                     </div>
                 `);
                 $(".yelpDiv").append(card);
+
+        //         // <div class="card">
+        //         <div class="card-header">
+        //         <h5 class="card-title">Bookstores Around Me</h5>
+        //     </div>
+        //     <div class="card-body">
+        //         <h5 class="store-name1">Name:</h5>
+        //         <h6 class="store-adress1">Address:</h6>
+        //         <h6 class="store-phone1">Number:</h6>
+        //         <h6 class="store-website1">Website:</h6>
+        //         <hr>
+        //         <h5 class="store-name2">Name:</h5>
+        //         <h6 class="store-adress2">Address:</h6>
+        //         <h6 class="store-phone2">Number:</h6>
+        //         <h6 class="store-website2">Website:</h6>
+        //     </div>
+        // </div>
                 
             }
 
