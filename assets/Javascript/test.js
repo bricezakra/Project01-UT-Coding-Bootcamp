@@ -1,4 +1,4 @@
-$(document).ready(function() {
+﻿$(document).ready(function() {
 
 
     //TODO this needs to be set as a function(lines 5-52) so that it can be called after every user Submit. See lines 54-65.
