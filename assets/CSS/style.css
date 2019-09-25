@@ -1,3 +1,5 @@
+*
+
 body {
   background-color: grey;
   background-image: url("../images/book1.jpg");
@@ -8,10 +10,11 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    padding-top: 10px;
 }
 
 .description{
-height: 250px;
+  height: 250px;
   width: 100%;
   border: 1px solid #ccc;
   overflow: auto;
@@ -19,24 +22,18 @@ height: 250px;
 
 .card{
   margin-top: 20px;
-  
-  
+  background:#DBEDED;
 }
 
 .bookcard{
   height: 650px;
   width: 500px;
-
 }
 
 .btn-primary{
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left,red, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right,red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
-    color:black;
-    
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 
 .display-4 {
@@ -54,4 +51,8 @@ height: 250px;
   background-color: red;
   background-image: url("../images/background.jpg");
   padding-bottom: 4%;
+}
+
+p {
+  padding-bottom: auto;
 }
