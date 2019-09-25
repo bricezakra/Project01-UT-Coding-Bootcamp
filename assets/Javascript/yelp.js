@@ -35,7 +35,7 @@ $(document).ready(function() {
                 console.log(data);
                 console.log(yelpUrl);
 
-
+            $(".yelpDiv").empty();
             var businesses = data.businesses;
             for (var i = 0; i < businesses.length; i++) {
                 var bookStoreName= data.businesses[i].name;
@@ -46,6 +46,8 @@ $(document).ready(function() {
                 //var bookStoreAddress=data.businesses[i].location.address1+","+data.businesses[i].location.city+","+data.businesses[i].location.zip_code;
                 console.log(bookStoreAlias, bookStoreAddress, bookStoreName, bookStorePhone)
                 console.log(bookStoreWebsite);
+                
+                
 
                 // var card = $(`
                 //     <div class="card bookcard" style="width: 18rem;">
