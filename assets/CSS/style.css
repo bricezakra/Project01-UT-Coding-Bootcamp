@@ -1,3 +1,8 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background-color: grey;
   background-image: url("../images/book1.jpg");
@@ -5,13 +10,15 @@ body {
 }
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    margin-right: 20px;
+    padding-top: 10px;
+    height: 200px;
+    float: left;
+    margin-bottom: 20px;
 }
 
 .description{
-height: 250px;
+  height: 200px;
   width: 100%;
   border: 1px solid #ccc;
   overflow: auto;
@@ -25,19 +32,17 @@ height: 250px;
 }
 
 .bookcard{
-  height: 650px;
-  width: 300px;
+  height: 475px;
+  width:500px;
+  margin-left: 20px;
+  margin-right: 20px;
 ;
 }
 
 .btn-primary{
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left,red, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right,red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
-    color:black;
-    
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 
 .display-4 {
@@ -55,4 +60,43 @@ height: 250px;
   background-color: red;
   background-image: url("../images/background.jpg");
   padding-bottom: 4%;
+}
+
+p {
+  padding-bottom: auto;
+}
+
+.storesAroundMe {
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+.titleAuthor {
+  float: right;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  height:40px;
+  width:100%;
+  background-image:url("../images/background.jpg");
+  background-color: grey;
+  color:white;
+  text-align: center;
+  margin-top: 20px;
+  clear: both;
+}
+
+.lastRow {
+  margin-bottom: 70px;
+}
+
+.store-name {
+  text-align: center;
+}
+
+.card-title {
+  text-align: center;
 }

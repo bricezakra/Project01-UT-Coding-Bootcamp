@@ -16,12 +16,12 @@ var search3 = "wow";
         search2 = $("#readBookGenre").val();
         search3 = $("#readBookAuthor").val();
         bookUrl = 'https://www.googleapis.com/books/v1/volumes?q=' + search1+search2+search3+ '&maxResults=4&orderBy=relevance&key=' + bookApi
-        alert(bookUrl);
+        // alert(bookUrl);
         $.ajax({
             url: bookUrl,
             method: "GET",
             error: function(){
-                alert("userSearch: there was an error");
+                // alert("userSearch: there was an error");
             }, success: function (response){
                 event.preventDefault();
                 //this will empty the book cards between each search
@@ -39,24 +39,30 @@ var search3 = "wow";
                     console.log(coverImg)
 
                     var book=$(
-                        //this is appending the book info into cards that will not show up until after a search!
-                        `<div class="col-lg-3">
-                        <div class="card bookcard" style="width: 18rem;">
-                            <img class="book-cover card-img-top" src="${coverImg}alt="cover">
-                        <div class="card-body">
+                        //this is appending the book info into cards that will now show up until after a search!
+                        `<div class="col-lg-6">
+                            <div class="card bookcard">
+                            <div class="card-body">
+                            <img class="book-cover card-img-thumbnail" src="${coverImg}alt="cover">
                             <h5 class="card-title">${title}</h5>
-                            <h5 class="card-title"></h5>
                             <h6 class="card-author"> ${author}</h6>
                             <p class="card-text description">${description}</p>
                             </div>
-                        </div>
+                            </div>
                         </div>`
                     );
-                        $(".bookDiv").append(book);
+                    $(".bookDiv").append(book);
+
+                    $("#readBook").val("");
+                    $("#readBookAuthor").val("");
+                    $("#readBookGenre").val("");
+
                 }
-            }, complete: function(){
-                
+
+            }, complete: function(){    
+
             },
+            
         })
       
         
