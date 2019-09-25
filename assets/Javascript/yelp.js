@@ -61,7 +61,7 @@ $(document).ready(function() {
                 // `);
               
                 var card= $(
-                `<div class="card" style="width: 18rem;">
+                `<div class="card book-card" style="width: 18rem;">
                 <div class="card-header">
                 <h5 class="card-title">Bookstores Around Me</h5>
             </div>
