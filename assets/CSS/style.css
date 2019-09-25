@@ -19,14 +19,15 @@ height: 250px;
 
 .card{
   margin-top: 20px;
-  
+  margin-left:20px;
+  width:500px;
   
 }
 
 .bookcard{
   height: 650px;
-  width: 500px;
-
+  width: 300px;
+;
 }
 
 .btn-primary{
