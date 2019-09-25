@@ -22,12 +22,19 @@ img {
 
 .card{
   margin-top: 20px;
+<<<<<<< HEAD
   background:#DBEDED;
+=======
+  margin-left:20px;
+  width:500px;
+  
+>>>>>>> b011148684bdde870ce768d2b5db737734ee5f36
 }
 
 .bookcard{
   height: 650px;
-  width: 500px;
+  width: 300px;
+;
 }
 
 .btn-primary{
