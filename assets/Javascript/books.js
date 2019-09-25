@@ -12,11 +12,6 @@ var search3 = "wow";
     //this function signals when user has 'submitted' & pulls a search
     function userSearch(){
         
-    
-        $(".card-title0").empty();
-        $(".book-cover0").empty();
-        $(".card-text0").empty();
-        $(".card-author0").empty();
         search1 = $("#readBook").val();
         search2 = $("#readBookGenre").val();
         search3 = $("#readBookAuthor").val();
